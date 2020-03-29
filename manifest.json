@@ -3,7 +3,8 @@
   "version": "1.0",
   "description": "Highlight errors on autolab",
   "browser_action": {
-    "default_icon": "assets/icon.png"
+    "default_icon": "assets/icon.png",
+    "default_popup": "popup.html"
   },
   "content_scripts": [
     {
