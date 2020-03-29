@@ -2,14 +2,15 @@
   "name": "AutoLab Highlighter",
   "version": "1.0",
   "description": "Highlight errors on autolab",
+  "browser_action": {
+    "default_icon": "assets/icon.png"
+  },
   "content_scripts": [
-      {
-          "matches": ["https://autolab.andrew.cmu.edu/*"],
-          "js": ["highlighter.js"]
-      }
+    {
+      "matches": ["https://autolab.andrew.cmu.edu/*"],
+      "js": ["highlighter.js"]
+    }
   ],
-  "permissions": [
-    "tabs", "https://autolab.andrew.cmu.edu/*"
-  ],
+  "permissions": ["tabs", "https://autolab.andrew.cmu.edu/*"],
   "manifest_version": 2
 }
